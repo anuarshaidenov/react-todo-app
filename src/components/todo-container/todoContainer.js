@@ -9,6 +9,7 @@ import InputTodo from '../input-todo/inputTodo';
 class TodoContainer extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       todos: [
         {
@@ -64,16 +65,30 @@ class TodoContainer extends React.Component {
     this.setState({ todos: [...this.state.todos, newTodo] });
   };
 
+  setUpdate = (updatedTitle, id) => {
+    this.setState({
+      todos: this.state.todos.map((todo) => {
+        if (todo.id === id) {
+          todo.title = updatedTitle;
+        }
+        return todo;
+      }),
+    });
+  };
+
   render() {
     return (
-      <div>
-        <Header />
-        <InputTodo addTodoItem={this.addTodoItem} />
-        <TodoList
-          handleChange={this.handleChange}
-          delTodo={this.delTodo}
-          todos={this.state.todos}
-        />
+      <div className="container">
+        <div className="inner">
+          <Header />
+          <InputTodo addTodoItem={this.addTodoItem} />
+          <TodoList
+            handleChange={this.handleChange}
+            delTodo={this.delTodo}
+            todos={this.state.todos}
+            setUpdate={this.setUpdate}
+          />
+        </div>
       </div>
     );
   }
