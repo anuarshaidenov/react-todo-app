@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
+import { HashRouter as BrowserRouter } from 'react-router-dom';
 
-import App from './App';
+import TodoContainer from './components/todo-container/todoContainer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <TodoContainer />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

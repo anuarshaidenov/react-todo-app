@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I buit a simple react app wich is "Todo list", using react. This app was built according to the steps provided in the React Tutorial From Scratch: A Step-by-Step Guide (2021)
 
-## Available Scripts
+It is a Single Page App (SPA) that allows users to:
 
-In the project directory, you can run:
+Add todo.
+Update todo.
+Delete todo.
+Navigate between pages with react router.
+Data in this app has been preserved using localStorage.
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ReactJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Live Demo
 
-### `npm test`
+[Live Demo Link](https://anuarshaidenov.github.io/react-todo-app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Go to your terminal, navigate to your working directory and run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`git clone https://github.com/anuarshaidenov/react-todo-app.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After that navigate to the newly created folder
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`cd math-magicians`
 
-### `npm run eject`
+You now have access to the files.
+To install necessary dependencies run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start a local server running the command
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You should now have the project running locally on a dev server.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Anuar Shaidenov**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [@anuarshaidenov](https://github.com/anuarshaidenov)
+- Twitter: [@anuarnyi](https://twitter.com/anuarnyi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anuar-shaidenov-365a951b8/)
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.
