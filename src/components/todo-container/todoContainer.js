@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import './todo-container.scss';
 import { v4 as uuidv4 } from 'uuid';
+import { Route, Routes } from 'react-router-dom';
 
 import TodoList from '../todo-list/todoList';
 import Header from '../header/header';
 import InputTodo from '../input-todo/inputTodo';
+import About from '../../pages/About';
+import NotMatch from '../../pages/NotMatch';
+import Navbar from '../navbar/navbar';
 
 const TodoContainer = () => {
   const getInitialTodos = () => {
@@ -64,14 +68,26 @@ const TodoContainer = () => {
   return (
     <div className="container">
       <div className="inner">
-        <Header />
-        <InputTodo addTodoItem={addTodoItem} />
-        <TodoList
-          handleChangeProps={handleChange}
-          delTodo={delTodo}
-          todos={todos}
-          setUpdate={setUpdate}
-        />
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Header />
+                <InputTodo addTodoItem={addTodoItem} />
+                <TodoList
+                  handleChangeProps={handleChange}
+                  delTodo={delTodo}
+                  todos={todos}
+                  setUpdate={setUpdate}
+                />
+              </div>
+            }
+          />
+          <Route path="about/*" element={<About />} />
+          <Route path="*" element={<NotMatch />} />
+        </Routes>
       </div>
     </div>
   );
