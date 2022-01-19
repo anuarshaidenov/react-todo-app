@@ -1,5 +1,15 @@
 # Todo App
 
+In this project I buit a simple react app wich is "Todo list", using react. This app was built according to the steps provided in the React Tutorial From Scratch: A Step-by-Step Guide (2021)
+
+It is a Single Page App (SPA) that allows users to:
+
+Add todo.
+Update todo.
+Delete todo.
+Navigate between pages with react router.
+Data in this app has been preserved using localStorage.
+
 ## Built With
 
 - ReactJS
