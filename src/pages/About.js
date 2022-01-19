@@ -3,8 +3,8 @@ import SinglePage from './SignlePage';
 
 const About = (props) => {
   return (
-    <div>
-      <ul>
+    <div className="about__content">
+      <ul className="about__list">
         <li>
           <Link to="about-app">About App</Link>
         </li>
